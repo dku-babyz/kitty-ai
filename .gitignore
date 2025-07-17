@@ -1,0 +1,5 @@
+inference/text/model/*
+!inference/text/model/.gitkeep
+inference/image/model_ts.pt
+
+__pycache__/
