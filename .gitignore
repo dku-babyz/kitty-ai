@@ -1,5 +1,6 @@
 inference/text/model/*
 !inference/text/model/.gitkeep
 inference/image/model_ts.pt
-temp.csv
+
 __pycache__/
+temp.csv
