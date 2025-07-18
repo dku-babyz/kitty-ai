@@ -86,6 +86,9 @@ def load_text_model(model_dir: str | Path | None = None):
     model = RoBERTaMultiTask(cfg)
     sd = _load_state_dict(_find_weight_file(model_dir))
     model.load_state_dict(sd, strict=True)
-    model.eval().to(get_device())
+    device = get_device()
+    if device.type == "cuda":
+        model.half()  # ✅ FP16
+    model.eval().to(device)
 
     return tok, model
