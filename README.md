@@ -131,7 +131,8 @@ print(checker("유해 텍스트"))
 GPT 기반 순화 기능을 사용하기 위해 OpenAI API 키를 환경 변수로 설정해야 합니다:
 
 ```bash
-export OPENAI_API_KEY=your_openai_key_here
+echo 'export OPENAI_API_KEY=your_openai_key_here' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 또는 Python 코드에서 직접 설정할 수도 있습니다:
