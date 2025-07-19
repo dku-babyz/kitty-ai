@@ -7,3 +7,5 @@ numpy
 ahocorasick
 Pillow
 scipy
+fastapi
+uvicorn
